@@ -13,7 +13,6 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   }));
 
   let routes = ["", "projects", "cv"].map((route) => ({
-      <!--    {formatDate(post.metadata.publishedA
     url: `${BaseUrl}${route}`,
     lastModified: new Date().toISOString().split("T")[0],
   }));
