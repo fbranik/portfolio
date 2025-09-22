@@ -1,0 +1,38 @@
+---
+title: "Understanding the Interaction Between Computation and Communication in HPC Applications"
+summary: "Research"
+publishedAt: "2025-09-22"
+tags: ""
+---
+
+This project is part of my work as researcher at the Computer Systems lab of [ICCS](https://www.iccs.gr/). It is
+also a continuation of some concepts from my thesis. A summary for this work can be seen bellow, while the code
+for a C++ MPI benchmark developed for it can be found on this [GitHub repo](https://github.com/fbranik/Compact).
+
+![Alt Text](/interference.png)
+
+Communication in parallel applications executed on distributed memory architectures is
+    highly dependent on fundamental factors, like the interconnection network and the communication size (i.e. number and size of
+    messages). However, there is a plethora of other parameters
+    that can affect communication. Some of these have been thoroughly documented, examined and categorised
+    in research and include the interconnect's architecture, core allocation sparsity, and process-to-node mapping strategies.
+
+    We extend beyond these established communication-related factors,
+    and examine how an application's computation phase may influence communication performance and vice versa. This topic has been
+    investigated before, focusing on memory contention and CPU performance
+    for simultaneous computation and communication operations.
+    However, our research adopts an application-oriented perspective on the issue.
+    Namely, we do not only evaluate the impact of shared resources
+    but also look at how the lack of synchronisation and the presence of possible time skews and variability between
+    coexisting processes can affect the overall performance of an HPC application.
+
+    To this end, we developed a targeted benchmarking application using C++ and MPI.
+    We executed several experimental scenarios on two leading supercomputing systems: LUMI and Marenostrum,
+    both featuring high-performance interconnection networks.
+    The combinations that this application can employ, allowed
+    us to not only analyse how different computation and communication phases interact, but to also explore how different types
+    of communication may also interfere when collocated. We are going to refer to this benchmarking suite as  
+    COMPACT (COMPutation And Communication Test),
+    designed to observe and measure the interactions between the different types of execution phases.
+
+
