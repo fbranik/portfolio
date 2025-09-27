@@ -6,17 +6,6 @@ export default function Page() {
   return (
     <section>
       <h1 className="mb-8 text-2xl font-medium"></h1>
-      <a  target="_blank">
-        <Image
-          src="/profile.png"
-          alt="Profile photo"
-          className="rounded-full bg-gray-100 block lg:mt-5 mt-0 lg:mb-5 mb-10 mx-auto sm:float-right sm:ml-5 sm:mb-5"
-          unoptimized
-          width={150}
-          height={150}
-          priority
-        />
-      </a>
       <div className="prose prose-neutral dark:prose-invert text-justify">
         <p>
 		I am a Software Engineer with a focus on systems, 
@@ -38,6 +27,17 @@ export default function Page() {
 }
 
 /*
+      <a  target="_blank">
+        <Image
+          src="/profile.png"
+          alt="Profile photo"
+          className="rounded-full bg-gray-100 block lg:mt-5 mt-0 lg:mb-5 mb-10 mx-auto sm:float-right sm:ml-5 sm:mb-5"
+          unoptimized
+          width={150}
+          height={150}
+          priority
+        />
+      </a>
 
      	<p>Skills</p> 
 	<ul className="space-y-4 text-left">
